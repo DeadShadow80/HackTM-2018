@@ -1,0 +1,22 @@
+-integrate google voice recognition api + magic touch
+-machine learning alg for payload data analysis
+-Design app+smartwatch app
+-make app+ smartwatch app (android studio)
+-Create database + integrate 
+
+Use github version control and keep code clean
+
+What it is:
+-find people around you with common interests at bars&coffee shops/parks/!events
+-want to drink something==> from near bars go to website and search for a menu
+-want to eat etc
+-smart watch + android app
+-voice control button + commands in app
+
+Functions:
+-voice command
+-find a chat (recommend drink /food )
+-get a drink 
+-get food
+-find event (sort events by tags)
++all events list somewhere
