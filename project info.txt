@@ -8,6 +8,7 @@ Use github version control and keep code clean
 
 What it is:
 -find people around you with common interests at bars&coffee shops/parks/!events
+==>location service (notification in-app + in notification bar to opt into finding someone near to talk to)
 -want to drink something==> from near bars go to website and search for a menu
 -want to eat etc
 -smart watch + android app
