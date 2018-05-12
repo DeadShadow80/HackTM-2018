@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "54654971028",
+    "firebase_url": "https://outerapp-5d23c.firebaseio.com",
+    "project_id": "outerapp-5d23c",
+    "storage_bucket": "outerapp-5d23c.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:54654971028:android:257b3b499c8efbc4",
+        "android_client_info": {
+          "package_name": "night.outer.outer_app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "54654971028-jm0f6uk22h3n5e95dcv3e8tuqle21skh.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "night.outer.outer_app",
+            "certificate_hash": "0eea123a48dcc1830a9aa3911999df9b87e2a871"
+          }
+        },
+        {
+          "client_id": "54654971028-rgb1cdv5i2vutvlbkg0uf5qk3n3vqnk0.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCAr7pvhWM39p3Bs3dfIKPweqIzxaIIZxc"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "54654971028-rgb1cdv5i2vutvlbkg0uf5qk3n3vqnk0.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
