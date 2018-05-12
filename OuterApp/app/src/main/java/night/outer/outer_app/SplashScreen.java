@@ -1,5 +1,6 @@
 package night.outer.outer_app;
 
+import android.content.Intent;
 import android.os.Handler;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -13,10 +14,12 @@ public class SplashScreen extends AppCompatActivity {
         Handler handler = new Handler();
         handler.postDelayed(new Runnable() {
             public void run() {
-                setContentView(R.layout.activity_login);
+                Intent intent=new Intent (getApplicationContext(), LoginActivity.class);
+                startActivity(intent);
             }
-        }, 3000);   //3 seconds
+        }, 1500);
 
     }
+
 
 }

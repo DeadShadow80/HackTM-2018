@@ -13,6 +13,7 @@
     <uses-permission android:name="android.permission.GET_ACCOUNTS" />
     <uses-permission android:name="android.permission.READ_PROFILE" />
     <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.INTERNET" />
 
     <application
         android:allowBackup="true"
@@ -32,25 +33,27 @@
         -->
         <meta-data
             android:name="com.google.android.geo.API_KEY"
-            android:value="@string/google_maps_key" />
+            android:value="AIzaSyCn_3dFEhyWsczEnccDfz4griRsrviZsl8" />
 
         <activity android:name=".SplashScreen">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+
                 <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
+            </intent-filter></activity>
+
+        <activity android:name=".LoginActivity"
+            android:label="@string/action_sign_in"></activity>
 
         <activity
-            android:name=".LoginActivity"
-            android:label="@string/title_activity_login">
-        </activity>
+            android:name=".SignupActivity"
+            android:label="@string/action_sign_in_short"></activity>
 
         <activity
             android:name=".MapsActivity"
-            android:label="@string/title_activity_maps">
-        </activity>
+            android:label="@string/title_activity_maps" ></activity>
 
+        <activity android:name=".ResetPasswordActivity" ></activity>
     </application>
 
 </manifest>
