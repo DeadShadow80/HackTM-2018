@@ -41,4 +41,11 @@
     <string name="lbl_forgot_password">Forgot password?</string>
     <string name="forgot_password_msg">We just need your registered Email Id to sent you password reset instructions.</string>
     <string name="title_activity_signin">SigninActivity</string>
+    <string name="Begin">Let`s Begin</string>
+    <string name="Welcome">Hi there, \n
+I`m Outer, and welcome to my app,
+let me help you with the setup. </string>
+    <string name="Voiceortext">Would you like to talk with me \n about yourself or type your answers?</string>
+    <string name="Speakt">Speak them</string>
+    <string name="Typet">Type them</string>
 </resources>
