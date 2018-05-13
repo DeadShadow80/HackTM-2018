@@ -7,35 +7,17 @@
     android:background="@drawable/splash_screen_back"
     tools:context="night.outer.outer_app.SplashScreen">
 
-    <ImageView
-<<<<<<< HEAD
-        android:id="@+id/imageView"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:layout_marginBottom="190dp"
-        android:layout_marginEnd="105dp"
-        android:layout_marginStart="105dp"
-        android:layout_marginTop="150dp"
-        android:src= "@mipmap/ic_launcher"
-=======
-        android:id="@+id/imageView3"
-        android:layout_width="125dp"
-        android:layout_height="131dp"
-        android:layout_marginBottom="300dp"
-        android:layout_marginEnd="143dp"
-        android:layout_marginStart="144dp"
-        android:layout_marginTop="301dp"
->>>>>>> master
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-<<<<<<< HEAD
-        app:layout_constraintVertical_bias="0.83">
-
-    </ImageView>
-
-=======
-        app:srcCompat="@mipmap/ic_launcher_sdpi" />
->>>>>>> master
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="125dp"
+            android:layout_height="131dp"
+            android:layout_marginBottom="300dp"
+            android:layout_marginEnd="143dp"
+            android:layout_marginStart="144dp"
+            android:layout_marginTop="301dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@mipmap/ic_launcher_sdpi" />
 </android.support.constraint.ConstraintLayout>
