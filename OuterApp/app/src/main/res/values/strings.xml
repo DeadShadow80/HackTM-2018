@@ -48,4 +48,5 @@ let me help you with the setup. </string>
     <string name="Voiceortext">Would you like to talk with me \n about yourself or type your answers?</string>
     <string name="Speakt">Speak them</string>
     <string name="Typet">Type them</string>
+    <string name="title_activity_main">MainActivity</string>
 </resources>

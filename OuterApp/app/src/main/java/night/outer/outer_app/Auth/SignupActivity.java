@@ -1,4 +1,4 @@
-package night.outer.outer_app;
+package night.outer.outer_app.Auth;
 
         import android.content.Intent;
         import android.os.Bundle;
@@ -15,6 +15,9 @@ package night.outer.outer_app;
         import com.google.android.gms.tasks.Task;
         import com.google.firebase.auth.AuthResult;
         import com.google.firebase.auth.FirebaseAuth;
+
+        import night.outer.outer_app.FirstCustomize;
+        import night.outer.outer_app.R;
 
 public class SignupActivity extends AppCompatActivity {
 

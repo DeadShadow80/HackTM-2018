@@ -60,63 +60,54 @@ import android.os.Bundle;
 import android.speech.tts.TextToSpeech;
 import android.view.View;
 import android.widget.Button;
-import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.ToggleButton;
-
-import com.android.volley.Request;
-import com.android.volley.RequestQueue;
-import com.android.volley.Response;
-import com.android.volley.VolleyError;
-import com.android.volley.toolbox.StringRequest;
-import com.android.volley.toolbox.Volley;
-
-import org.w3c.dom.Text;
-
-import night.outer.outer_app.Network;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
 
 import java.util.Locale;
+
+import night.outer.outer_app.Utils.NetworkManager;
 
 public class FirstCustomize extends Activity implements TextToSpeech.OnInitListener {
     private TextToSpeech tts;
     private Button btnSpeak, btn1, btn2;
     private ToggleButton tog;
-    private EditText txtText;
+    private TextView txtText;
     public Object[] mStringArray;
-
-    public String text = "";
-
-    String Send_GET_Request(String url) {
-        RequestQueue RequestQueue = Volley.newRequestQueue(this);
-        StringRequest GetRequest = new StringRequest(Request.Method.GET, url, new Response.Listener<String>() {
-            @Override
-            public void onResponse(String response) {
-                text = response;
-            }
-        }, new Response.ErrorListener() {
-            @Override
-            public void onErrorResponse(VolleyError error) {
-                text = "Error";
-            }
-        });
-        RequestQueue.add(GetRequest);
-        return text;
-    }
-
+    public String text;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
+        NetworkManager.getInstance(this);
+
         setContentView(R.layout.activity_first_customize);
 
-        Send_GET_Request("https://www.google.com");
-        /*
-        Network a = null;
-        a.Send_POST_Request("https://www.google.ro","deez_nutz");
-        final TextView mTextView = (TextView) findViewById(R.id.text);
-        mTextView.setText(a.Send_GET_Request("https://www.google.ro"));
-        */
+        txtText=(TextView) findViewById(R.id.text3);
 
+        NetworkManager.getInstance().Send_POST_Request("aceste nuci","https://postman-echo.com/post", new NetworkManager.SomeCustomListener<String>() {
+                    @Override
+                    public void getResult(String result) {
+                        if(!result.isEmpty()){
+                            txtText.setText(result);
+                        }
+                    }
+                });
+
+        NetworkManager.getInstance().Send_GET_Request("https://httpbin.org/get", new NetworkManager.SomeCustomListener<String>() {
+            @Override
+            public void getResult(String result) {
+                if(!result.isEmpty()){
+                    txtText.setText(result);
+                }
+            }
+        });
+        FirebaseDatabase databasse = FirebaseDatabase.getInstance();
+        DatabaseReference myRef = databasse.getReference("users/");
+
+        myRef.setValue("Deez nutz");
 
         tts = new TextToSpeech(this, this);
         btnSpeak = (Button) findViewById(R.id.button2);
@@ -142,7 +133,7 @@ public class FirstCustomize extends Activity implements TextToSpeech.OnInitListe
                     public void onClick(View view) {
 
                     }
-                });
+                });}
 
                 /**Switch to next activity*/
                 /*
@@ -153,8 +144,7 @@ public class FirstCustomize extends Activity implements TextToSpeech.OnInitListe
                         startActivity(intent);
                     }
                 }, 1);*/
-            }
-        });
+            });
     }
 
     @Override

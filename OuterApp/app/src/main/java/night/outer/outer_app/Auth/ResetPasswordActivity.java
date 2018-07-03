@@ -1,4 +1,4 @@
-package night.outer.outer_app;
+package night.outer.outer_app.Auth;
         import android.os.Bundle;
         import android.support.annotation.NonNull;
         import android.support.v7.app.AppCompatActivity;
@@ -12,6 +12,8 @@ package night.outer.outer_app;
         import com.google.android.gms.tasks.OnCompleteListener;
         import com.google.android.gms.tasks.Task;
         import com.google.firebase.auth.FirebaseAuth;
+
+        import night.outer.outer_app.R;
 
 public class ResetPasswordActivity extends AppCompatActivity {
 
