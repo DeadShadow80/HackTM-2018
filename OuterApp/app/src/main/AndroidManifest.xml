@@ -37,23 +37,28 @@
         <activity android:name=".SplashScreen">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
         <activity
-            android:name=".LoginActivity"
+            android:name=".Auth.LoginActivity"
             android:label="@string/action_sign_in" />
         <activity
-            android:name=".SignupActivity"
+            android:name=".Auth.SignupActivity"
             android:label="@string/action_sign_in_short" />
         <activity
             android:name=".MapsActivity"
             android:label="@string/title_activity_maps" />
-        <activity android:name=".ResetPasswordActivity" />
-        <activity android:name=".FirstCustomize">
+        <activity android:name=".Auth.ResetPasswordActivity" />
+        <activity
+            android:name=".FirstCustomize"
+            android:parentActivityName=".Auth.LoginActivity">
 
-
+        </activity>
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/title_activity_main"
+            android:theme="@style/AppTheme">
         </activity>
     </application>
 
