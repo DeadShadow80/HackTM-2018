@@ -49,4 +49,9 @@ let me help you with the setup. </string>
     <string name="Speakt">Speak them</string>
     <string name="Typet">Type them</string>
     <string name="title_activity_main">MainActivity</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="menu_button">Menu button</string>
+    <string name="ai_button">AI button</string>
 </resources>

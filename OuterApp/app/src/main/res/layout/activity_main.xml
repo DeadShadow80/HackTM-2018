@@ -1,11 +1,32 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-android:orientation="horizontal"
-android:layout_width="match_parent"
-android:layout_height="match_parent">
-<fragment android:name="night.outer.outer_app.MapsActivity"
-    android:id="@+id/list"
-    android:layout_weight="1"
-    android:layout_width="0dp"
-    android:layout_height="match_parent" />
-</LinearLayout>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:baselineAligned="false">
+
+    <fragment
+        android:id="@layout/fragment_maps"
+        android:name="night.outer.outer_app.MapsFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <ImageButton
+        android:id="@+id/voice_button"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_gravity="center_horizontal|bottom"
+        android:layout_marginBottom="20dp"
+        android:background="#00000000"
+        android:contentDescription="@string/ai_button"
+
+        android:scaleType="fitCenter"
+        android:src="@mipmap/ic_launcher_sdpi" />
+
+    <ImageButton
+        android:id="@+id/menu_button"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:contentDescription="@string/menu_button"
+        android:src="@drawable/ic_menu" />
+
+</FrameLayout>

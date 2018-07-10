@@ -30,8 +30,6 @@ public class MainActivity extends AppCompatActivity {
         super.onStart();
         FirebaseUser currentUser = mAuth.getCurrentUser();
 
-
-
         updateUI(currentUser);
     }
 
